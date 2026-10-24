@@ -140,29 +140,6 @@ header {
     font-family: var(--font-mono);
 }
 
-.btn-deck-link {
-    background: var(--bg-paper);
-    border: 1.5px solid var(--border-ink);
-    color: var(--color-green);
-    padding: 0.45rem 0.85rem;
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 0.45rem;
-    text-decoration: none;
-    box-shadow: 2px 2px 0 var(--border-ink);
-    transition: all 0.15s ease;
-}
-
-.btn-deck-link:hover {
-    background: var(--color-green);
-    color: #ffffff;
-    transform: translate(-1px, -1px);
-    box-shadow: 3px 3px 0 var(--text-ink);
-}
-
 .ws-status-badge {
     display: flex;
     align-items: center;
