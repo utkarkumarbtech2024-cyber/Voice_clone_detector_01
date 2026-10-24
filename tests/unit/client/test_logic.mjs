@@ -7,7 +7,7 @@ test('toViewModel maps OK level properly', () => {
     assert.equal(vm.level, 'OK');
     assert.equal(vm.vibrate, false);
     assert.equal(vm.showAlertBanner, false);
-    assert.ok(vm.color.includes('10b981') || vm.color.includes('green') || vm.color.includes('emerald'));
+    assert.ok(vm.color.includes('10b981') || vm.color.includes('046a38') || vm.color.includes('green') || vm.color.includes('emerald'));
 });
 
 test('toViewModel maps WARNING level properly', () => {
@@ -15,7 +15,7 @@ test('toViewModel maps WARNING level properly', () => {
     assert.equal(vm.level, 'WARNING');
     assert.equal(vm.vibrate, false);
     assert.equal(vm.showAlertBanner, false);
-    assert.ok(vm.color.includes('f59e0b') || vm.color.includes('amber') || vm.color.includes('yellow'));
+    assert.ok(vm.color.includes('f59e0b') || vm.color.includes('c97702') || vm.color.includes('amber') || vm.color.includes('yellow'));
 });
 
 test('toViewModel maps ALERT level properly with mandatory phrasing and vibration', () => {
@@ -23,7 +23,7 @@ test('toViewModel maps ALERT level properly with mandatory phrasing and vibratio
     assert.equal(vm.level, 'ALERT');
     assert.equal(vm.vibrate, true);
     assert.equal(vm.showAlertBanner, true);
-    assert.ok(vm.color.includes('f43f5e') || vm.color.includes('ef4444') || vm.color.includes('rose') || vm.color.includes('red'));
+    assert.ok(vm.color.includes('f43f5e') || vm.color.includes('e34222') || vm.color.includes('ef4444') || vm.color.includes('rose') || vm.color.includes('red'));
     assert.ok(vm.bannerText.includes('This voice may be AI-generated'));
     assert.ok(vm.bannerText.includes('Hang up and call back on a number you know'));
 });

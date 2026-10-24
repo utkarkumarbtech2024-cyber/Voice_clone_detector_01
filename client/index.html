@@ -6,10 +6,10 @@
     <meta name="description" content="Call Shield - Real-time synthetic-voice clone detection and scam defense dashboard. Continuous in-memory acoustic analysis with zero audio retention.">
     <title>Call Shield - Real-Time AI Voice Clone Defense</title>
 
-    <!-- Google Fonts: Outfit & Inter -->
+    <!-- Google Fonts: Fraunces, Outfit, Inter & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -30,9 +30,17 @@
                 </div>
             </div>
 
-            <div class="ws-status-badge" id="ws-badge">
-                <span class="ws-status-dot" id="ws-status-dot"></span>
-                <span id="ws-status-text">Connecting...</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <a href="presentation.html" class="btn-deck-link" title="View & Download Presentation Pitch Deck">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                    </svg>
+                    <span>Pitch Deck (PPT)</span>
+                </a>
+                <div class="ws-status-badge" id="ws-badge">
+                    <span class="ws-status-dot" id="ws-status-dot"></span>
+                    <span id="ws-status-text">Connecting...</span>
+                </div>
             </div>
         </header>
 
